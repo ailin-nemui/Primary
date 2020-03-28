@@ -175,6 +175,10 @@ public class TimeActivity extends StdGameActivity implements SubjectBaseActivity
         return new ArrayList<>(answerset);
     }
 
+    private String upperCase(String word) {
+	return word.substring(0, 1).toUpperCase() + word.substring(1);
+    }
+
     private String makeFuzzyTime(String time) {
 
         String fuzzytime = "";
@@ -183,46 +187,40 @@ public class TimeActivity extends StdGameActivity implements SubjectBaseActivity
         int min = Integer.parseInt(tparts[1]);
 
         int disphour = hour;
-        int dispmin = min;
+	int disphour1 = hour==12 ? 1 : hour+1;
 
-        boolean noMins = false;
-        String befaft = "";
-        if (min <= 27) {
-            befaft = getString(R.string.fuzzy_after);
-            disphour = hour;
-            dispmin = min;
-        } else if (min >= 33) {
-            befaft = getString(R.string.fuzzy_till);
-            disphour = hour==12 ? 1 : hour+1;
-            dispmin = 60 - min;
-
-        } else {
-            befaft = getString(R.string.fuzzy_half_past);
-            noMins = true;
-        }
-        if (min >3 && min<57) {
-            for (int t = 5; t < 31; t += 5) {
-                if (Math.abs(dispmin - t) <= 2) {
-                    if (!noMins) {
-                        if (t==15 || t==45) {
-                            fuzzytime = getString(R.string.fuzzy_quarter);
-                        } else {
-                            fuzzytime = t + "";
-                        }
-                    }
-                    fuzzytime += befaft + disphour;
+	if (min <3) {
+	    fuzzytime = disphour + getString(R.string.fuzzy_o_clock);
+	} else if (Math.abs(min - 15) <= 2) {
+	    fuzzytime = getString(R.string.fuzzy_quarter) + disphour1;
+	} else if (Math.abs(min - 25) <= 2) {
+	    fuzzytime = "5" + getString(R.string.fuzzy_till) + getString(R.string.fuzzy_half) + disphour1;
+	} else if (Math.abs(min - 30) <= 2) {
+	    fuzzytime = getString(R.string.fuzzy_half) + disphour1;
+	} else if (Math.abs(min - 35) <= 2) {
+	    fuzzytime = "5" + getString(R.string.fuzzy_after) + getString(R.string.fuzzy_half) + disphour1;
+	} else if (Math.abs(min - 45) <= 2) {
+	    fuzzytime = getString(R.string.fuzzy_three_quarter) + disphour1;
+	} else if (min >=58) {
+	    fuzzytime = disphour1 + getString(R.string.fuzzy_o_clock);
+	}
+	else {
+            for (int t = 5; t <= 20; t += 5) {
+                if (Math.abs(min - t) <= 2) {
+		    fuzzytime = t + getString(R.string.fuzzy_after) + disphour;
                     break;
-                }
+                } else if (Math.abs(60 - min - t) <= 2) {
+		    fuzzytime = t + getString(R.string.fuzzy_till) + disphour1;
+                    break;
+		}
             }
-        } else {
-            fuzzytime = disphour + getString(R.string.fuzzy_o_clock);
         }
 
         if (fuzzytime.length() == 0) {
             Log.d("Timeact", "zero length for " + time);
             fuzzytime = "0";
         }
-        return fuzzytime;
+        return upperCase(fuzzytime);
     }
 
     @Override

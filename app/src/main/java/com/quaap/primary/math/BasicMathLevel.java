@@ -66,7 +66,7 @@ public class BasicMathLevel extends StdLevel {
     public String getShortDescription(Context context) {
         String ops = getOpsSymStr();
         if (mMaxMathOp == mMinMathOp) {
-            ops = mMaxMathOp.name();
+            ops = context.getString(mMaxMathOp.getResId());
         }
         String max = (mNegatives != Negatives.None ? "\u00B1" : "") + mMaxNum;
         return context.getString(R.string.max, max) + ". " + ops;

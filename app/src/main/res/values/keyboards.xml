@@ -34,11 +34,13 @@
         <item>e</item>
         <item>r</item>
         <item>t</item>
-        <item>y</item>
+        <item>z</item>
         <item>u</item>
         <item>i</item>
         <item>o</item>
         <item>p</item>
+        <item>ü</item>
+        <item>ß</item>
 
         <item>a</item>
         <item>s</item>
@@ -49,6 +51,8 @@
         <item>j</item>
         <item>k</item>
         <item>l</item>
+        <item>ö</item>
+        <item>ä</item>
         <item>\u0008</item>
 
         <item>" "</item>
@@ -59,7 +63,6 @@
         <item>b</item>
         <item>n</item>
         <item>m</item>
-        <item>\'</item>
         <item>\n</item>
     </string-array>
 

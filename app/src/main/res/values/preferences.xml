@@ -2,15 +2,15 @@
 <resources>
 
     <string-array name="keyboard_prefs">
-        <item>Force in-game keyboard (default)</item>
-        <item>Force system keyboard</item>
-        <item>Force nothing</item>
+        <item>Eingebaute Tastatur (Standard)</item>
+        <item>Android-Tastatur</item>
+        <item>Nichts</item>
     </string-array>
 
     <string-array name="keypad_prefs">
-        <item>Force in-game keypad (default)</item>
-        <item>Force system keypad</item>
-        <item>Force nothing</item>
+        <item>Eingebaute Zahlentastatur (default)</item>
+        <item>Android-Zahlentastatur</item>
+        <item>Nichts</item>
     </string-array>
 
     <string-array name="keyboardpad_prefs_values">
@@ -20,10 +20,10 @@
     </string-array>
 
 
-    <string name="should_use_csv">Record data in CSV files?</string>
-    <string name="using_csv">Data will be recorded</string>
-    <string name="not_using_csv">Data will not be recorded</string>
-    <string name="choose_keypad">Choose numeric keypad</string>
-    <string name="choose_keyboard">Choose alphabetic keyboard</string>
+    <string name="should_use_csv">Aufzeichnung erstellen?</string>
+    <string name="using_csv">Aufzeichnung wird erstellt</string>
+    <string name="not_using_csv">Aufzeichnung wird nicht erstellt</string>
+    <string name="choose_keypad">Zahlentastatur auswählen</string>
+    <string name="choose_keyboard">Tastatur auswählen</string>
 
 </resources>

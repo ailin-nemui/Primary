@@ -1,49 +1,49 @@
 <resources>
-    <string name="app_name">Primary</string>
-    <string name="points">Total points</string>
-    <string name="resume_game">Resume Game</string>
-    <string name="remaining">Remaining</string>
-    <string name="clear_progress">Clear Progress</string>
-    <string name="total_correct">Total correct</string>
+    <string name="app_name">Schule</string>
+    <string name="points">Punkte</string>
+    <string name="resume_game">Weiterspielen</string>
+    <string name="remaining">Noch</string>
+    <string name="clear_progress">Zurücksetzen</string>
+    <string name="total_correct">Richtig</string>
     <string name="level_grade">Level %</string>
     <string name="name">Name</string>
-    <string name="add">Add</string>
-    <string name="correct">Correct!</string>
-    <string name="score_overview">"Level: %1$d.  %2$d / %3$d correct. Score: %4$d."</string>
-    <string name="levels_done">You\'ve completed all the levels in this subject!</string>
-    <string name="level_complete">Level %d complete!</string>
-    <string name="next_level">Next level</string>
-    <string name="repeat_level">Repeat this level</string>
-    <string name="try_again">Try again!</string>
-    <string name="level">"Level %d"</string>
+    <string name="add">Erstellen</string>
+    <string name="correct">Richtig!</string>
+    <string name="score_overview">"Stufe %1$d.  %2$d / %3$d richtig. Punkte: %4$d."</string>
+    <string name="levels_done">Du hast alle Stufen in diesem Fach geschafft!</string>
+    <string name="level_complete">Stufe %d geschafft!</string>
+    <string name="next_level">Nächste Stufe</string>
+    <string name="repeat_level">Stufe wiederholen</string>
+    <string name="try_again">Nochmal!!</string>
+    <string name="level">"Stufe %d"</string>
     <string name="max">"Max %s"</string>
-    <string name="defaultUserName">Default</string>
-    <string name="add_user">Add User</string>
-    <string name="choose_user">1. Choose user</string>
-    <string name="choose_subject">2. Choose Subject:</string>
-    <string name="go">Go!</string>
-    <string name="start_lab">3. Start</string>
-    <string name="avatar">Avatar:</string>
-    <string name="name_short">Name too short</string>
-    <string name="name_long">Name must be less than 10 characters long</string>
-    <string name="name_in_use">Name already in use!</string>
-    <string name="change_avatar">Change Avatar</string>
-    <string name="delete_user">Delete User</string>
-    <string name="update_avatar">Update</string>
-    <string name="today_points">Today\'s points</string>
-    <string name="superfast">SuperFast!</string>
-    <string name="fast">Fast!</string>
-    <string name="quick">Quick!</string>
+    <string name="defaultUserName">Ich</string>
+    <string name="add_user">Neuer Schüler</string>
+    <string name="choose_user">1. Schüler wählen</string>
+    <string name="choose_subject">2. Fach wählen</string>
+    <string name="go">Los geht\'s!</string>
+    <string name="start_lab">3. </string>
+    <string name="avatar">Bild:</string>
+    <string name="name_short">Name zu kurz</string>
+    <string name="name_long">Name zu lang (mehr als 10 Buchstaben)</string>
+    <string name="name_in_use">Name schon vorhanden!</string>
+    <string name="change_avatar">Bild ändern</string>
+    <string name="delete_user">Schüler löschen</string>
+    <string name="update_avatar">Aktualisieren</string>
+    <string name="today_points">Punkte heute</string>
+    <string name="superfast">Blitz!</string>
+    <string name="fast">Flott!</string>
+    <string name="quick">Schnell!</string>
 
     <string name="plus">Plus</string>
     <string name="minus">Minus</string>
-    <string name="times">Times</string>
-    <string name="divide">Divide</string>
-    <string name="setcompleted">Done</string>
+    <string name="times">Mal</string>
+    <string name="divide">Geteilt</string>
+    <string name="setcompleted">Fertig</string>
     <string name="add_item">Add Item</string>
-    <string name="sure_delete_user">Are you sure you want to delete the user?</string>
-    <string name="delete">Delete</string>
-    <string name="cancel">Cancel</string>
+    <string name="sure_delete_user">Willst du den Schüler wirklich löschen?</string>
+    <string name="delete">Löschen</string>
+    <string name="cancel">Abbrechen</string>
     <string name="csv_time">Time</string>
     <string name="csv_level">Level</string>
     <string name="csv_problem">Problem</string>
@@ -53,60 +53,63 @@
     <string name="csv_tspent">Time spent</string>
     <string name="csv_run_percent">Running Percent</string>
     <string name="csv_points">Points</string>
-    <string name="sure_clear_progress">Are you sure you want to clear your progress?</string>
-    <string name="clear">Clear</string>
-    <string name="write_perms_granted">Will record activity in csv file.</string>
-    <string name="write_perms_denied">Will not record activity in csv file.</string>
+    <string name="sure_clear_progress">Willst du das Fach wirklich von vorn beginnen?</string>
+    <string name="clear">Zurücksetzen</string>
+    <string name="write_perms_granted">Werde keine Aufzeichnung erstellen.</string>
+    <string name="write_perms_denied">Werde Aufzeichnung lokal auf dem Handy anlegen.</string>
     <string name="about_primary">
         <![CDATA[
-        <p>Primary is opensource software. See the full license and sourcecode
-            <a href="https://github.com/quaap/Primary">here</a>.</p>
+        <p>Schule ist freie Software. Die Lizenz und der Quellcode können
+            <a href="https://github.com/ailin-nemui/Primary">hier</a> abgerufen werden.</p>
 
-            <p>Report any issues, feedback, or suggestions <a href="https://github.com/quaap/Primary/issues">here</a>.</p>
+            <p>Probleme und Vorschläge können <a href="https://github.com/quaap/Primary/issues">hier</a> eingereicht werden (auf Englisch).</p>
 
 
-            <p>This program was written by <a href=\'http://quaap.com/D/programming-index?from=primary\'>Tom Kliethermes</a></p>
+            <p>Dieses Programm wurde von <a href=\'http://quaap.com/D/programming-index?from=primary\'>Tom Kliethermes</a> erstellt.</p>
+
+            <p>Übersetzung von <a href=\'https://github.com/ailin-nemui\'>Nei</a>.</p>
 
             ]]>
     </string>
-    <string name="about">About</string>
-    <string name="all_scores">All Scores</string>
-    <string name="settings">Settings</string>
-    <string name="loading">Loading Text To Speech…</string>
-    <string name="clear_input">Clear</string>
-    <string name="repeat_word">Repeat word</string>
-    <string name="done">Done</string>
-    <string name="voice_ready">Ready?,</string>
-    <string name="today_score">Today: %d</string>
-    <string name="total_score">Total: %d</string>
-    <string name="what_is_the_plural">What is the plural?</string>
-    <string name="in_a_row">%d in a row!</string>
+    <string name="about">Über</string>
+    <string name="all_scores">Auswertung</string>
+    <string name="settings">Einstellungen</string>
+    <string name="loading">Lade Sprachausgabe…</string>
+    <string name="clear_input">Löschen</string>
+    <string name="repeat_word">Nochmal hören</string>
+    <string name="done">Geschafft</string>
+    <string name="voice_ready">Bereit?,</string>
+    <string name="today_score">Heute: %d</string>
+    <string name="total_score">Gesamt: %d</string>
+    <string name="what_is_the_plural">Wie heißt die Mehrzahl?</string>
+    <string name="in_a_row">%d i.d.R!</string>
     <string name="sort_desc">%1$d items. Values up to %2$d.</string>
     <string name="sort_sdesc">x%1$d. Mx%2$d</string>
     <string name="write_csv_alert">Write CSV?</string>
-    <string name="do_csv_alert">Do you want to record your results in CSV files? (For your own record-keeping purposes only.)</string>
-    <string name="record">Record</string>
-    <string name="no_record">Don\'t record</string>
-    <string name="can_change_csv">You can change the CSV setting from the Settings menu at any time.</string>
-    <string name="what_time_is_it">What time is it?</string>
-    <string name="clock">Clock</string>
-    <string name="sort_the_values">Sort the values</string>
-    <string name="disp_buttons">Multiple choice</string>
-    <string name="disp_input">Keyboard</string>
-    <string name="length">Length: %d.</string>
+    <string name="do_csv_alert">Aufzeichnungen erstellen? (Nur für den Eigengebrauch lokal auf dem Handy.)</string>
+    <string name="record">Aufzeichnen</string>
+    <string name="no_record">Nicht aufzeichnen</string>
+    <string name="can_change_csv">Du kannst die Aufzeichnung jederzeit in den Einstellungen an- und ausschalten.</string>
+    <string name="what_time_is_it">Wie spät ist es?</string>
+    <string name="clock">Uhr</string>
+    <string name="sort_the_values">Der Reihe nach</string>
+    <string name="disp_buttons">Multiple-Choice</string>
+    <string name="disp_input">Tastatur</string>
+    <string name="length">Länge: %d.</string>
 
-    <string name="min_gran_hour">Hour</string>
-    <string name="min_gran_half">Half hour</string>
-    <string name="min_gran_quarter">Quarter hour</string>
-    <string name="min_gran_five">Fives</string>
-    <string name="min_gran_one">Ones</string>
-    <string name="fuzzy_after">" after "</string>
-    <string name="fuzzy_till">" till "</string>
-    <string name="fuzzy_half_past">"Half past "</string>
-    <string name="fuzzy_quarter">Quarter</string>
-    <string name="fuzzy_o_clock">" o'clock"</string>
-    <string name="fuzzy_closest_message">What is the closest time?</string>
-    <string name="doubles">"Doubles. "</string>
+    <string name="min_gran_hour">Volle Stunde</string>
+    <string name="min_gran_half">Halbe Stunde</string>
+    <string name="min_gran_quarter">Viertelstunde</string>
+    <string name="min_gran_five">Fünf-Minuten</string>
+    <string name="min_gran_one">Minutengenau</string>
+    <string name="fuzzy_after">" nach "</string>
+    <string name="fuzzy_till">" vor "</string>
+    <string name="fuzzy_half">"halb "</string>
+    <string name="fuzzy_quarter">"viertel "</string>
+    <string name="fuzzy_three_quarter">"drei Viertel "</string>
+    <string name="fuzzy_o_clock">" Uhr"</string>
+    <string name="fuzzy_closest_message">Welche Zeit ist am nächsten dran?</string>
+    <string name="doubles">"Verdoppeln. "</string>
 
 
 </resources>

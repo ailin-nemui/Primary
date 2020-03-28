@@ -22,8 +22,8 @@ import java.security.SecureRandom;
 public enum MathOp {
     Plus("+", R.string.plus),
     Minus("-", R.string.minus),
-    Times("\u00D7", R.string.times),
-    Divide("\u00F7", R.string.divide);
+    Times("\u22C5", R.string.times),
+    Divide("\u2236", R.string.divide);
 
     private static final SecureRandom random = new SecureRandom();
     private final String mDisplay;
