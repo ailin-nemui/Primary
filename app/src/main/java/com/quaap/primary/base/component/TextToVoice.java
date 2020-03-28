@@ -35,12 +35,15 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
     private int utterid = 0;
     private VoiceReadyListener mFil;
     private boolean fullyInited;
+    private java.util.ArrayList<android.speech.tts.Voice> mVoicelist;
+    private int mVoiceListPos = 0;
 
     public TextToVoice(Context context) {
         mContext = context;
         try {
             Log.d("TextToVoice", "started " + System.currentTimeMillis());
             mTts = new TextToSpeech(mContext, this);
+            mVoicelist = new java.util.ArrayList<android.speech.tts.Voice>();
 
             setPitch(mPitch);
             setSpeed(mSpeed);
@@ -77,7 +80,13 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
-            int result = mTts.setLanguage(Locale.getDefault());
+            Locale loc;
+            if (Build.VERSION.SDK_INT >= 21) {
+                loc = new Locale.Builder().setLanguage("de").setScript("").setRegion("DE").build();
+            } else {
+                loc = new Locale("de", "DE");
+            }
+            int result = mTts.setLanguage(loc);
             isInit = true;
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
@@ -86,6 +95,15 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
             }
             Log.d("TextToSpeech", "Initialization Suceeded! " + System.currentTimeMillis());
 
+            if (Build.VERSION.SDK_INT >= 21) {
+                java.util.Set<android.speech.tts.Voice> voices= mTts.getVoices();
+                for (android.speech.tts.Voice v : voices) {
+                    if (v.getLocale().toString().equals("de_DE") && v.getName().contains("#male") && v.getName().contains("-local")) {
+                        mVoicelist.add(v);
+                    }
+                }
+                if (mVoicelist.size() > 0) { mTts.setVoice(mVoicelist.get(mVoicelist.size() - 1)); }
+            }
             speak(mContext.getString(R.string.voice_ready) + ",");
         } else {
             Log.e("error", "Initialization Failed! " + status);
@@ -105,6 +123,10 @@ public class TextToVoice implements TextToSpeech.OnInitListener {
         // Log.d("TextToSpeech", text + " " +  System.currentTimeMillis());
         if (isInit) {
             if (Build.VERSION.SDK_INT >= 21) {
+                if (mVoicelist.size() > 0) {
+                    mTts.setVoice(mVoicelist.get(mVoiceListPos));
+                    mVoiceListPos = (mVoiceListPos + 1) % mVoicelist.size();
+                }
                 mTts.speak(text, TextToSpeech.QUEUE_ADD, null, "utt" + utterid);
             } else {
                 mTts.speak(text, TextToSpeech.QUEUE_ADD, null);

@@ -140,6 +140,7 @@ public class Keyboard {
         rowlayout.setOrientation(LinearLayout.HORIZONTAL);
         glayout.addView(rowlayout);
         int num=0;
+        final ViewGroup parentlayoutref = parentlayout;
         for (String k : keys) {
 
             if (num++ % cols == 0) {
@@ -150,6 +151,10 @@ public class Keyboard {
 
             if (mKeyMap.containsKey(k)) {
                 k = mKeyMap.get(k);
+            }
+            if (mKeyMap.containsKey("uppercase") && "UPPERCASE".equals(mKeyMap.get("uppercase"))
+                && editText.getSelectionStart() == 0) {
+                k = k.toUpperCase();
             }
 
             TextView key = new TextView(mContext);
@@ -193,6 +198,9 @@ public class Keyboard {
                         editText.getText().insert(editText.getSelectionStart(), k);
 
 
+                    }
+                    if (editText.getSelectionStart() <= 1 && mKeyMap.containsKey("uppercase") && "UPPERCASE".equals(mKeyMap.get("uppercase"))) {
+                        showKeyboard(editText, parentlayoutref);
                     }
 
                 }

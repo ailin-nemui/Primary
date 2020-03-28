@@ -504,7 +504,8 @@ public abstract class SubjectBaseActivity extends CommonBaseActivity {
 
             ansbutt.setAllCaps(false);
             String text = choice.toString();
-            ansbutt.setText(capitalize(text));
+            /* ansbutt.setText(capitalize(text)); */
+            ansbutt.setText(text);
             ansbutt.setTag(choice);
             ansbutt.setOnClickListener(new View.OnClickListener() {
                 @Override

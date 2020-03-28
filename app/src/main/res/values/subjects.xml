@@ -62,16 +62,16 @@
     <string name="subject_t2_desc">Uhrzeit ablesen umgangssprachlich</string>
 
     <string name="subject_sp1_code">LA-Sp1</string>
-    <string name="subject_sp1_name">Spelling 1–6</string>
-    <string name="subject_sp1_desc">Language Arts: spelling words 1 to 5 letters long</string>
+    <string name="subject_sp1_name">Schreiben 1–2</string>
+    <string name="subject_sp1_desc">Deutsch: Grundwörter schreiben (Kl. 1-2)</string>
 
     <string name="subject_sp2_code">LA-Sp2</string>
-    <string name="subject_sp2_name">Spelling 6–8</string>
-    <string name="subject_sp2_desc">Language Arts: spelling words 6 to 8 letters long</string>
+    <string name="subject_sp2_name">Schreiben 2–3</string>
+    <string name="subject_sp2_desc">Deutsch: Wörter schreiben (Kl. 1-2)</string>
 
     <string name="subject_sp3_code">LA-Sp3</string>
-    <string name="subject_sp3_name">Spelling 9+</string>
-    <string name="subject_sp3_desc">Language Arts: spelling words 9+ letters long</string>
+    <string name="subject_sp3_name">Schreiben 4+</string>
+    <string name="subject_sp3_desc">Deutsch: Wörter schreiben (Kl. 3-4)</string>
 
     <string name="subject_eng1_code">LA-Pl1</string>
     <string name="subject_eng1_name">Plurals 1</string>

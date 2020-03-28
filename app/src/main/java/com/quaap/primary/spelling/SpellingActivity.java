@@ -153,6 +153,7 @@ public class SpellingActivity extends StdGameActivity
         SpellingLevel level = (SpellingLevel) getLevel();
         if (level.getInputMode() == InputMode.Input) {
 
+            addToKeyboardKeyMap("uppercase", Character.isUpperCase(word.charAt(0)) ? "UPPERCASE" : "lowercase");
             makeInputBox(getAnswerArea(), getKeysArea(), SpellingActivity.this, INPUTTYPE_TEXT, 6, 0);
         }
 
@@ -287,15 +288,20 @@ public class SpellingActivity extends StdGameActivity
 
     private String unspell(String word) {
 
+        String lword = word.toLowerCase();
         for (int j = 0; j < 1; j++) {
-            int i = ((int) (Math.random() * ((unspellMap.length - 1) / 2)) * 2);
+            double rnd = Math.sqrt(Math.random() * (((unspellMap.length/2) * (unspellMap.length/2)) - 1));
+            int i = unspellMap.length - 2 - 2 * ((int)(rnd));
 
             String find = unspellMap[i];
             String replacement = unspellMap[i + 1];
 
-            word = word.replaceFirst(find, replacement);
+            lword = lword.replaceFirst(find, replacement);
         }
-        return word;
+        if (Character.isUpperCase(word.charAt(0))) {
+            lword = capitalize(lword);
+        }
+        return lword;
     }
 
 

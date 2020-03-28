@@ -83,9 +83,9 @@
     <string name="total_score">Gesamt: %d</string>
     <string name="what_is_the_plural">Wie heißt die Mehrzahl?</string>
     <string name="in_a_row">%d i.d.R!</string>
-    <string name="sort_desc">%1$d items. Values up to %2$d.</string>
+    <string name="sort_desc">%1$d Zahlen. Zahlenraum bis %2$d.</string>
     <string name="sort_sdesc">x%1$d. Mx%2$d</string>
-    <string name="write_csv_alert">Write CSV?</string>
+    <string name="write_csv_alert">CSV-Aufzeichnung?</string>
     <string name="do_csv_alert">Aufzeichnungen erstellen? (Nur für den Eigengebrauch lokal auf dem Handy.)</string>
     <string name="record">Aufzeichnen</string>
     <string name="no_record">Nicht aufzeichnen</string>
@@ -94,8 +94,8 @@
     <string name="clock">Uhr</string>
     <string name="sort_the_values">Der Reihe nach</string>
     <string name="disp_buttons">Multiple-Choice</string>
-    <string name="disp_input">Tastatur</string>
-    <string name="length">Länge: %d.</string>
+    <string name="disp_input">Eingeben</string>
+    <string name="length">Faktor: %d.</string>
 
     <string name="min_gran_hour">Volle Stunde</string>
     <string name="min_gran_half">Halbe Stunde</string>
@@ -109,7 +109,7 @@
     <string name="fuzzy_three_quarter">"drei Viertel "</string>
     <string name="fuzzy_o_clock">" Uhr"</string>
     <string name="fuzzy_closest_message">Welche Zeit ist am nächsten dran?</string>
-    <string name="doubles">"Verdoppeln. "</string>
+    <string name="doubles">"Quadrat. "</string>
 
 
 </resources>

@@ -175,10 +175,6 @@ public class TimeActivity extends StdGameActivity implements SubjectBaseActivity
         return new ArrayList<>(answerset);
     }
 
-    private String upperCase(String word) {
-	return word.substring(0, 1).toUpperCase() + word.substring(1);
-    }
-
     private String makeFuzzyTime(String time) {
 
         String fuzzytime = "";
@@ -220,7 +216,7 @@ public class TimeActivity extends StdGameActivity implements SubjectBaseActivity
             Log.d("Timeact", "zero length for " + time);
             fuzzytime = "0";
         }
-        return upperCase(fuzzytime);
+        return capitalize(fuzzytime);
     }
 
     @Override

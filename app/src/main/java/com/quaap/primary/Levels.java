@@ -169,7 +169,7 @@ public class Levels {
                                 new SortingLevel(R.string.subject_m7_code, 6, 99, 15),
                                 new SortingLevel(R.string.subject_m7_code, 9, 99, 10),
                         }),
-
+                /*
                 new Subjects.Desc(context, SubjectGroup.Math, R.string.subject_m8_code, R.string.subject_m8_name, R.string.subject_m8_desc,
                         SortingActivity.class,
                         new Level[]{
@@ -178,7 +178,7 @@ public class Levels {
                                 new SortingLevel(R.string.subject_m8_code, 6, 999, 15),
                                 new SortingLevel(R.string.subject_m8_code, 9, 999, 10),
                         }),
-
+                */
 
                 new Subjects.Desc(context, SubjectGroup.Math, R.string.subject_m9_code, R.string.subject_m9_name, R.string.subject_m9_desc,
                         SortingActivity.class,
@@ -220,40 +220,43 @@ public class Levels {
                 new Subjects.Desc(context, SubjectGroup.LanguageArts, R.string.subject_sp1_code, R.string.subject_sp1_name, R.string.subject_sp1_desc,
                         SpellingActivity.class,
                         new Level[]{
-                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1b, 3, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1b, 3, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1a, 3, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1a, 3, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1b, 4, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1b, 6, 10, InputMode.Input),
                                 new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1c, 4, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1c, 4, 10, InputMode.Input),
-                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1d, 5, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1d, 5, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp1_code, R.array.spelling_words_1c, 7, 10, InputMode.Input),
                         }),
 
 
                 new Subjects.Desc(context, SubjectGroup.LanguageArts, R.string.subject_sp2_code, R.string.subject_sp2_name, R.string.subject_sp2_desc,
                         SpellingActivity.class,
                         new Level[]{
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1e, 6, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1e, 6, 10, InputMode.Input),
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1f, 7, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1f, 7, 10, InputMode.Input),
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1g, 8, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1g, 8, 10, InputMode.Input),
-                        }),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1c, 3, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1c, 6, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1d, 4, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1d, 9, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1d, 4, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1d, 9, 10, InputMode.Input),
 
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1e, 5, 10, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp2_code, R.array.spelling_words_1e, 12, 5, InputMode.Input),
+                        }),
 
                 new Subjects.Desc(context, SubjectGroup.LanguageArts, R.string.subject_sp3_code, R.string.subject_sp3_name, R.string.subject_sp3_desc,
                         SpellingActivity.class,
                         new Level[]{
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1h, 9, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1h, 9, 10, InputMode.Input),
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1i, 10, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1i, 10, 10, InputMode.Input),
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1j, 12, 20, InputMode.Buttons),
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1j, 12, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1f, 3, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1f, 7, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1g, 5, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1g, 11, 10, InputMode.Input),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1g, 4, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1g, 10, 10, InputMode.Input),
 
-                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1j, 18, 30, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1h, 6, 20, InputMode.Buttons),
+                                new SpellingLevel(R.string.subject_sp3_code, R.array.spelling_words_1h, 13, 10, InputMode.Input),
                         }),
-
+                /*
                 new Subjects.Desc(context, SubjectGroup.LanguageArts, R.string.subject_eng1_code, R.string.subject_eng1_name, R.string.subject_eng1_desc,
                         PluralActivity.class,
                         new Level[]{
@@ -275,7 +278,7 @@ public class Levels {
                                 new PluralLevel(R.string.subject_eng2_code, 14, 20, InputMode.Buttons),
                                 new PluralLevel(R.string.subject_eng2_code, 14, 10, InputMode.Input),
                         }),
-
+                */
 
         };
 
