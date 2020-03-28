@@ -55,8 +55,8 @@
     <string name="csv_points">Points</string>
     <string name="sure_clear_progress">Willst du das Fach wirklich von vorn beginnen?</string>
     <string name="clear">Zurücksetzen</string>
-    <string name="write_perms_granted">Werde keine Aufzeichnung erstellen.</string>
-    <string name="write_perms_denied">Werde Aufzeichnung lokal auf dem Handy anlegen.</string>
+    <string name="write_perms_granted">Werde Aufzeichnung lokal auf dem Handy anlegen.</string>
+    <string name="write_perms_denied">Werde keine Aufzeichnung erstellen.</string>
     <string name="about_primary">
         <![CDATA[
         <p>Schule ist freie Software. Die Lizenz und der Quellcode können
