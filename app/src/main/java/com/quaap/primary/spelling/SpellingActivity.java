@@ -267,7 +267,7 @@ public class SpellingActivity extends StdGameActivity
 
     private List<String> getAnswerChoices(String realanswer) {
         List<String> answers = new ArrayList<>();
-        int maxtries = unspellMap.length;
+        int maxtries = unspellMap.length * unspellMap.length;
         int tries;
         do {
             String badspell;
