@@ -24,18 +24,24 @@ import com.quaap.primary.base.component.InputMode;
 public class TimeLevel extends StdLevel {
 
     public enum MinuteGranularity {
-        Hour(R.string.min_gran_hour),
-        Half(R.string.min_gran_half),
-        Quarter(R.string.min_gran_quarter),
-        Five(R.string.min_gran_five),
-        One(R.string.min_gran_one);
+        Hour(R.string.min_gran_hour,  R.string.min_gran_hour_s),
+        Half(R.string.min_gran_half, R.string.min_gran_half_s),
+        Quarter(R.string.min_gran_quarter, R.string.min_gran_quarter_s),
+        Five(R.string.min_gran_five, R.string.min_gran_five_s),
+        One(R.string.min_gran_one, R.string.min_gran_one_s);
 
         private final int mResId;
-        MinuteGranularity(int resId) {
+        private final int mShortResId;
+        MinuteGranularity(int resId, int shortResId) {
             mResId = resId;
+            mShortResId = shortResId;
         }
 
         String getString(Context context) {
+            return context.getString(mResId);
+        }
+
+        String getShortString(Context context) {
             return context.getString(mResId);
         }
     }
@@ -68,6 +74,6 @@ public class TimeLevel extends StdLevel {
 
     @Override
     public String getShortDescription(Context context) {
-        return mMinuteGranularity.toString();
+        return mMinuteGranularity.getShortString(context);
     }
 }

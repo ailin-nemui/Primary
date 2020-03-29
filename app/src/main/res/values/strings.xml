@@ -102,6 +102,11 @@
     <string name="min_gran_quarter">Viertelstunde</string>
     <string name="min_gran_five">Fünf-Minuten</string>
     <string name="min_gran_one">Minutengenau</string>
+    <string name="min_gran_hour_s">Volle</string>
+    <string name="min_gran_half_s">Halbe</string>
+    <string name="min_gran_quarter_s">Viertel</string>
+    <string name="min_gran_five_s">Fünf-M.</string>
+    <string name="min_gran_one_s">Minuten</string>
     <string name="fuzzy_after">" nach "</string>
     <string name="fuzzy_till">" vor "</string>
     <string name="fuzzy_half">"halb "</string>
