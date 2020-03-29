@@ -1,39 +1,41 @@
-# Primary
+# Schule
 
-A simple educational practice game for kids and adults.
+Eine einfache spielerische App um Grundschulaufgaben zu trainieren.
 
-In version 0.2 there are levels dealing with Math and Language Arts.
+Es ist eine deutsche Übersetzung von https://github.com/quaap/Primary
 
-Version 0.3 will add Time and Clocks.
+In Version 0.2 mit Mathe und Rechtschreibung.
 
-You can find the latest installable version on [FDroid](https://f-droid.org/repository/browse/?fdid=com.quaap.primary).
+Version 0.3 mit der Uhr (12 Stunden).
 
-The app is designed to allow other level sets, and in the future I'd like to add 
-other math levels (ideas: word problems, easier and harder math,  fractions, decimals, time, etc) and other subjects 
-as well (ideas: reading, maps, geometry, science, etc?)
+Ein Debug-APK ist auf [Releases](https://github.com/ailin-nemui/Primary/releases) angehängt. You can find the latest installable version on [FDroid](https://f-droid.org/repository/browse/?fdid=com.quaap.primary).
 
-(Note: This app is still in the beta stage and things are likely to change.)
+Vielleicht kommen irgendwann noch mehr Aufgaben hinzu. ( allerdings macht
+der Entwickler des Originals gerade eine länger Pause )
+
+Ideen: Wörter, Brüche, digitale Uhr, usw. und andere Fächer: Geografie, Geometrie, usw.?
+
+(Hinweis: Ewige Beta.)
 
 Features:
-* Progressive levels.
-* Slightly gamified.
-* Hints given after a bit of time to keep younger players from getting stuck.
-* Supports multiple users.
-* Big page of all scores.
-* Can keep a log of answers in external csv files for record-keeping  purposes (eg homeschooling).
+* Progressive Level.
+* Spielerische Klänge.
+* Hinweise werden nach einiger Zeit eingeblendet.
+* Mehrere Schülerprofile in einer App.
+* Große Übersicht des Fortschritts.
+* Kann den Fortschritt auch in CSV Dateien aufzeichnen (z.B. für Homeschooling).
 
-Math Features:
-* Basic addition, subtration, multiplication, and division levelsets.
-* Some levels multiple choice, some keyboard-entry.
-* Sorting of 1, 2, and 3 digit numbers.
+Mathe:
+* Addition, Subtraktion, Multiplikation, und Division.
+* Multiple-Choice Antworten und Eingabe der Antwort über Bildschirmtastatur.
+* Sortieren von Zahlen aus den Zahlenräumen 10, 100 und 1000.
 
-Language Arts Features:
-* Spelling common words (uses Text-To-Speech)
-* Pluralization of common nouns
-* Some levels multiple choice, some keyboard-entry.
+Deutsch:
+* Rechtschreibung (benutzt die Android Sprachausgabe.)
+* Multiple-Choice Antworten und Eingabe der Antwort über Bildschirmtastatur.
 
-![Primary main menu](http://quaap.com/D/media/pa.png)
-![Math 1](http://quaap.com/D/media/pe.png)
-![Math 2](http://quaap.com/D/media/pi.png)
+![Hauptmenü](fastlane/metadata/android/de/images/phoneScreenshots/1.png)
+![Mathe](fastlane/metadata/android/de/images/phoneScreenshots/2.png)
+![Uhr](fastlane/metadata/android/de/images/phoneScreenshots/3.png)
 
 
