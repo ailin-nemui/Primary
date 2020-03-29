@@ -42,7 +42,7 @@ public class TimeLevel extends StdLevel {
         }
 
         String getShortString(Context context) {
-            return context.getString(mResId);
+            return context.getString(mShortResId);
         }
     }
     //public enum SecondGranularity {Minute, Half, Quarter, Five, One}
