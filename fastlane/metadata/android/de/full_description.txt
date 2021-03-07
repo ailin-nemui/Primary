@@ -1,7 +1,3 @@
-Schule ist eine App mit der Grundschüler üben können. Erwachsene
-dürfen sie auch probieren. Es gibt Plus, Minus, Mal und
-Geteilt-Aufgaben, Uhrzeit lesen, sowie Wörter richtig
-schreiben. Vielleicht kommt später noch mehr dazu. ( allerdings macht
-der Entwickler des Originals gerade eine länger Pause )
+<i>Schule</i> ist eine App mit der Grundschüler üben können. Erwachsene dürfen sie auch probieren. Es gibt Plus, Minus, Mal und Geteilt-Aufgaben, Uhrzeit lesen, sowie Wörter richtig schreiben. Vielleicht kommt später noch mehr dazu. ( allerdings macht der Entwickler des Originals gerade eine länger Pause ).
 
-Dies ist eine deutsche Übersetzung von [[com.quaap.primary]]
+Dies ist eine deutsche Übersetzung von <a href='https://github.com/quaap/Primary' target='_blank' rel='nofollow'>quaap/Primary</a>.
